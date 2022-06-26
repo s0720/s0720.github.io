@@ -25,3 +25,12 @@ header {
     padding-left:20px;
     padding-right:20px;
 }
+
+.header-ham {
+        color: white;
+        float: right;
+        font-size: 25px;
+        padding:33px 0px;
+        display:none;
+      }
+}
