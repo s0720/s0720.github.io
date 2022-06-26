@@ -1,8 +1,5 @@
-@media screen and　(　max-width:414px　) {
+@media (max-width:764px) {
     .header-menu {
         display:none;
-    }
-    .hedader-ham {
-        display:block;
     }
 }
