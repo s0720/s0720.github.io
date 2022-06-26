@@ -1,3 +1,7 @@
+* {
+    box-sizing:border-sizing;
+}
+
 header {
     background-color: #26d0c9;
     color:#fff;
