@@ -6,9 +6,6 @@ body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
-* {
-    box-sizing: border-box;
-}
 
 header {
     background-color: #26d0c9;
