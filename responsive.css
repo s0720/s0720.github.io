@@ -1,0 +1,8 @@
+@media(max-width:414px) {
+    .header-menu {
+        display:none;
+    }
+    .hedader-ham {
+        display:block;
+    }
+}
