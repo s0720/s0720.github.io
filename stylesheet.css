@@ -12,14 +12,9 @@ header {
     color:white;
 }
 
-.header-con {
-    width:90%;
-    margin:0 auto;
-}
-
 .header-logo {
     font-size: 36px;
-    padding:20px;
+    padding:20px 20px;
     float:left;
 }
 
