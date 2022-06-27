@@ -1,0 +1,26 @@
+* {
+    box-sizing:border-box;
+    }
+
+header {
+    height:90px;
+    background-color: #26d0c9;
+    color:white;
+    height:90px;
+}
+
+.header-logo {
+    font-size: 36px;
+    padding:20px 40px;
+    float:left;
+}
+
+.header-menu {
+    float:left;
+}
+
+.header-menu a {
+    display:block;
+    padding:33px 20px;
+    float:left;
+}
