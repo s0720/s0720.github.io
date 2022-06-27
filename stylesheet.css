@@ -1,6 +1,9 @@
 * {
     box-sizing:border-box;
     }
+body {
+    font-family: "Hiragino Sans",sans-serif;
+}
 
 header {
     height:90px;
