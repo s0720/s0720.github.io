@@ -1,5 +1,8 @@
 /*スマホ向け*/
 @media screen and (max-width:670px) {
+    .header-con {
+        width:670px;
+    }
     .header-logo {
         font-size:26px;
     }
