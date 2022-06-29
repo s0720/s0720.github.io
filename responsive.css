@@ -1,5 +1,8 @@
 /*スマホ向け*/
 @media screen and (max-width:670px) {
+    header {
+        width:100%;
+    }
     .header-logo {
         font-size:26px;
     }
@@ -9,4 +12,11 @@
     .hamburger {
         display:block;
     }
+    .con h1 {
+        font-size:100px;
+    }
+    .con h2 {
+        font-size:50px;
+    }
 }
+
