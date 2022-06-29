@@ -27,6 +27,14 @@ header {
     float:left;
 }
 
+.hamburger {
+    color:white;
+    font:26px;
+    line-height:90px;
+    float:right;
+    display:none;
+}
+
 .con1 {
     padding:100px 80px 100px 80px;
 }
