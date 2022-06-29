@@ -3,5 +3,10 @@
     .header-logo {
         font-size:26px;
     }
+    .header-menu {
+        display:none;
+    }
+    .hamburger {
+        display:block;
+    }
 }
-
