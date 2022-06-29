@@ -1,6 +1,8 @@
 /* スマホ向け */
 @media screen and (max-width:670px) {
     .header-menu {
-        block: none;
+        display: none;
     }
+    .hamburger {
+        display:block;
 }
