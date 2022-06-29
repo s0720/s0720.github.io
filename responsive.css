@@ -3,9 +3,8 @@
     .header-menu {
         display:none;
     }
-    .hamburger {
+    .fa-bar {
         display:block;
-        color:red;
     }
 }
     
