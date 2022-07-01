@@ -33,7 +33,8 @@ header {
 }
 
 .hamburger {
-    display:none;
+    line-height:90px;
     float:right;
     padding-right:40px;
+    display:none;
 }
