@@ -9,7 +9,7 @@
 
 header {
     background-color:#26d0c9;
-    color:#fff;
+    color:white;
     height:90px;
 }
 
@@ -36,4 +36,5 @@ header {
     line-height:90px;
     float:right;
     padding-right:40px;
+    display:none;
 }
