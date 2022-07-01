@@ -80,3 +80,29 @@ header {
 .clear {
     clear:left;
 }
+
+.con3 {
+    padding:100px 80px;
+}
+
+.con3 h3 {
+    font-size:28px;
+    padding-bottom:15px;
+    border-bottom:2px solid #dee7ec;
+}
+
+.mailaddress {
+    padding-top:50px;
+}
+
+.con3 p{
+    padding-bottom:10px;
+}
+
+input,textarea {
+    border:1px solid #dee7ec;
+    width:400px;
+    font-size:18px;
+    padding:20px;
+    margin-bottom:30px;
+}
