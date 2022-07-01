@@ -54,3 +54,29 @@ header {
 .con1 h2 {
     font-size:60px;
 }
+
+.con2 {
+    padding-left:80px;
+    padding-right:80px;
+}
+
+.con2 h3 {
+    font-size:28px;
+    padding-bottom:15px;
+    border-bottom:2px solid #dee7ec;
+}
+
+.lesson {
+    padding-top:50px;
+    float:left;
+    padding-right:40px;
+}
+
+.lesson p {
+    font-size:24px;
+    padding-bottom:30px;
+}
+
+.clear {
+    clear:left;
+}
