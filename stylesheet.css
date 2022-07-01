@@ -38,3 +38,19 @@ header {
     padding-right:40px;
     display:none;
 }
+
+.con1 {
+    padding:100px 80px;
+}
+
+.con1 h1 {
+    font-size:140px;
+}
+
+.conmma {
+    color:red;
+}
+
+.con1 h2 {
+    font-size:60px;
+}
