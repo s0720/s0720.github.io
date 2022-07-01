@@ -34,4 +34,29 @@
     .lesson p {
         font-size:20px;
     }
+
+    .con3 {
+        padding:50px 20px;
+    }
+
+    .con3 h3 {
+        font-size:22px;
+        padding-bottom:10px;
+        border-bottom:2px solid #dee7ec;
+    }
+    
+    .mailaddress {
+        padding-top:20px;
+    }
+    
+    .con3 p{
+        padding-bottom:5px;
+    }
+    
+    input,textarea {
+        width:50%;
+        font-size:16px;
+        padding:10px;
+        margin-bottom:20px;
+    }
 }
