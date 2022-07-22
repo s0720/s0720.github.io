@@ -3,63 +3,606 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progate</title>
+    <title>PRACTICE1</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0edb6b0504.js" crossorigin="anonymous"></script>
+<!--------------------スライダー見た目-------------------------------------------------->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<!-------------------------------------------------------------------------------------> 
+
+<!--------------------jQuery-----------------------------------------------------------> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!------------------------------------------------------------------------------------->  
+
+<!--------------------スライダー動かすやつ----------------------------------------------->  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<!------------------------------------------------------------------------------------->  
+
   </head>
   <body>
-    <header>
-        <div class="header-logo">Progate</div>
-        <div class="header-menu">
-            <a>プログラミングとは</a>
-            <a>学べるレッスン</a>
-            <a>お問い合わせ</a>
+    <p class="header-ad">新規会員登録でその場で使える<span class="point">300pt</span>プレゼント！他にもお得がいっぱい！</p>
+    <nav id="global_nav">
+      <header>
+        <div class="header-con">
+          <span class="header-logo">
+            <img src="https://www.muk-webshop.com/wp-content/themes/muk/src/images/common/logo.png">
+          </span>
+          <span class="header-menu">
+            <a>TOP</a>
+            <a>LOGIN</a>
+            <a>LOGOUT</a>
+            <a>ABOUT</a>
+            <a>GUIDE</a>
+            <a>CONTACT</a>
+          </span>
+          <span class="header-icon">
+            <span class="fa-solid fa-circle-user fa-lg"></span>
+            <span class="fa-solid fa-heart fa-lg"></span>
+            <span class="fa-solid fa-cart-shopping fa-lg"></span>
+          </span>
+          <!---レスポンシブ用-->
+          <span class="smp-icon">
+            <span class="fa-solid fa-cart-shopping fa-lg"></span>
+            <input id="menu-checkbox" type="checkbox" />
+            <label class="menu-btn" for="menu-checkbox">
+              <i class="fas fa-bars"></i>
+            </label>
+            <div class="nav-content">
+              <input id="menu-checkbox" type="checkbox" />
+              <label class="menu-btn" for="menu-checkbox">
+                <i class="fas fa-times"></i>
+              </label>
+              <nav class="nav-menu">
+                <p class="hamburger">
+                  <p class="ham side-menu">CATEGORY</p>
+                  <p class="ham-menu-list">ピアス</p>
+                  <p class="ham-menu-list">イヤリング</p>
+                  <p class="ham-menu-list">ネックレス</p>
+                  <p class="ham-menu-list">リング</p>
+                  <p class="ham-menu-list">ブレスレット・アンクレット</p>
+                  <p class="ham-menu-list">ヘアアクセサリー</p>
+                  <p class="ham-menu-list">時計</p>
+                  <p class="ham-menu-list">雑貨</p>
+                  <p class="ham-menu-list">ジュエリー</p>
+                  <p class="ham side-menu">TYPE</p>
+                  <p class="ham-menu-list"><span class="new">[NEW]</span> 新作入荷アイテム</p>
+                  <p class="ham-menu-list"><span class="re">[RE]</span> 再入荷アイテム</p>
+                  <p class="ham-menu-list"><span class="hot">[HOT]</span> マスク関連グッズ</p>
+                  <p class="ham-menu-list">金属アレルギー対応</p>
+                  <p class="ham-menu-list">プチプラアイテム</p>
+                  <p class="ham-menu-list">素材から探す</p>
+                  <p class="ham-menu-list">モチーフから探す</p>
+                  <p class="ham-menu-list">使用シーンから探す</p>
+                  <p class="ham-menu-list">ショップブランドから探す</p>
+                  <p class="ham-menu-list">商品コレクションから探す</p>
+                </p>
+              </nav>
+            </div>
+            <label class="nav-close" for="menu-checkbox"></label>
+          </span>
+          <!---レスポンシブ終了-->
+          <input id="menu-checkbox" type="checkbox" />
+          <label class="menu-btn" for="menu-checkbox">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="nav-content">
+            <input id="menu-checkbox" type="checkbox" />
+            <label class="menu-btn" for="menu-checkbox">
+              <i class="fas fa-times"></i>
+            </label>
+            <nav class="nav-menu">
+              <p class="hamburger">
+                <p class="ham side-menu">CATEGORY</p>
+                <p class="ham-menu-list">ピアス</p>
+                <p class="ham-menu-list">イヤリング</p>
+                <p class="ham-menu-list">ネックレス</p>
+                <p class="ham-menu-list">リング</p>
+                <p class="ham-menu-list">ブレスレット・アンクレット</p>
+                <p class="ham-menu-list">ヘアアクセサリー</p>
+                <p class="ham-menu-list">時計</p>
+                <p class="ham-menu-list">雑貨</p>
+                <p class="ham-menu-list">ジュエリー</p>
+                <p class="ham side-menu">TYPE</p>
+                <p class="ham-menu-list"><span class="new">[NEW]</span> 新作入荷アイテム</p>
+                <p class="ham-menu-list"><span class="re">[RE]</span> 再入荷アイテム</p>
+                <p class="ham-menu-list"><span class="hot">[HOT]</span> マスク関連グッズ</p>
+                <p class="ham-menu-list">金属アレルギー対応</p>
+                <p class="ham-menu-list">プチプラアイテム</p>
+                <p class="ham-menu-list">素材から探す</p>
+                <p class="ham-menu-list">モチーフから探す</p>
+                <p class="ham-menu-list">使用シーンから探す</p>
+                <p class="ham-menu-list">ショップブランドから探す</p>
+                <p class="ham-menu-list">商品コレクションから探す</p>
+              </p>
+            </nav>
+          </div>
+          <label class="nav-close" for="menu-checkbox"></label>
         </div>
-        <div class="hamburger">
-            <span class="fa fa-bars"></span>
+      </header>
+    </nav>
+      
+
+    <div class="con1-wrapper">
+      <aside>
+        <form method="get" action="https://www.muk-webshop.com/fs/accessory/GoodsSearchList.html" class="search_container">
+        <input type="hidden" name="_e_k" value="Ａ">
+        <input type="hidden" name="tag" value="検索可能"> 
+        <input type="text" name="keyword" maxlength="1000" placeholder="Item serch">
+        <input type="submit" value="&#xf002">
+        </form>
+
+        <p class="side-menu">CATEGORY</p>
+        <p class="side-menu-list">ピアス</p>
+        <p class="side-menu-list">イヤリング</p>
+        <p class="side-menu-list">ネックレス</p>
+        <p class="side-menu-list">リング</p>
+        <p class="side-menu-list">ブレスレット・アンクレット</p>
+        <p class="side-menu-list">ヘアアクセサリー</p>
+        <p class="side-menu-list">時計</p>
+        <p class="side-menu-list">雑貨</p>
+        <p class="side-menu-list">ジュエリー</p>
+
+        <p class="side-menu">TYPE</p>
+        <p class="side-menu-list"><span class="new">[NEW]</span> 新作入荷アイテム</p>
+        <p class="side-menu-list"><span class="re">[RE]</span> 再入荷アイテム</p>
+        <p class="side-menu-list"><span class="hot">[HOT]</span> マスク関連グッズ</p>
+        <p class="side-menu-list">金属アレルギー対応</p>
+        <p class="side-menu-list">プチプラアイテム</p>
+        <p class="side-menu-list">素材から探す</p>
+        <p class="side-menu-list">モチーフから探す</p>
+        <p class="side-menu-list">使用シーンから探す</p>
+        <p class="side-menu-list">ショップブランドから探す</p>
+        <p class="side-menu-list">商品コレクションから探す</p>
+      </aside>
+      <main>
+        <div class="sec_inner_1">
+          <div class="slider-1">   
+            <div><img class="slider-img-1" src="https://www.muk-webshop.com/wp-content/uploads/2020/11/1-sale-2.jpg"></div>
+            <div><img class="slider-img-1" src="https://www.muk-webshop.com/wp-content/uploads/2020/11/1-coffeegold-1.jpg"></div>
+            <div><img class="slider-img-1" src="https://www.muk-webshop.com/wp-content/uploads/2022/06/1-contents2206.jpg"></div>
+            <div><img class="slider-img-1" src="https://www.muk-webshop.com/wp-content/uploads/2020/11/1-japan-2.jpg"></div>
+            <div><img class="slider-img-1" src="https://www.muk-webshop.com/wp-content/uploads/2020/11/1-deformationmetal.jpg"></div>
+            <div><img class="slider-img-1" src="https://www.muk-webshop.com/wp-content/uploads/2020/11/1-earcuff-3.jpg"></div>   
+          </div>
         </div>
-    </header>
-    <div class="con1">
-      <h1>HELLO WORLD<span class="conmma">.</span></h1>
-      <h2>プログラミングの世界へようこそ</h2>
+        <div class="topics">
+          <img class="topics-img" src="https://www.muk-webshop.com/wp-content/uploads/2021/01/2-nonallergy-2.jpg">
+          <img class="topics-img" src="https://www.muk-webshop.com/wp-content/uploads/2021/01/2-dreamystone-1.jpg">
+          <img class="topics-img topics-under" src="https://www.muk-webshop.com/wp-content/uploads/2021/01/2-hair.jpg">
+          <img class="topics-img topics-under" src="https://www.muk-webshop.com/wp-content/uploads/2021/01/2-clear.jpg">
+        </div>
+        <a class="news">一部商品価格改定のお知らせ（7/1）</a>
+        <div class="narrival">
+          <div class="narrival-title">NEW ARRIVALS</div>
+          <div class="sec_inner_2">
+            <div class="slider-2">
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-251.jpg">
+                <p>ミッフィーとボリスのハンド＆スタンドミラー</p>
+                <p>1,760円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-252.jpg">
+                <p>ミッフィーとボリスのオーガンジーシュシュ</p>
+                <p>800円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2019/12/1-341.jpg">
+                <p>ドライフラワーボックスデザインピアス</p>
+                <p>1,430円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-253.jpg">
+                <p>ドライフラワーボックスデザインポニー</p>
+                <p>1,430円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-254.jpg">
+                <p>ちりめん細工ピアス</p>
+                <p>1,100円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-255.jpg">
+                <p>提灯ピアス</p>
+                <p>1,100円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-248.jpg">
+                <p>パフュームフワラーアクセサリーポーチ</p>
+                <p>2,310円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-249.jpg">
+                <p>ラウンドファスナーアクセサリーポーチ</p>
+                <p>2,695円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-246.jpg">
+                <p>ループメッシュメタルバンスクリップ</p>
+                <p>1,430円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2020/12/1-241.jpg">
+                <p>パーティカルパールスムースピアス</p>
+                <p>2,860円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2019/12/1-327.jpg">
+                <p>グロスエポラウンドメタルピアス</p>
+                <p>1,980円</p>
+              </div>
+              <div class="newitem">
+                <img class="slider-img-2" src="https://www.muk-webshop.com/wp-content/uploads/2019/12/1-328.jpg">
+                <p>グロスポリボンパニー</p>
+                <p>1,540円</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-viewmore">
+          <a class="viewmore">VIEW MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＞</a>
+        </div>
+        <div class="c-hotword">
+          <p class="hotword">HOT WORLD</p>
+          <div class="tags">
+             <a class="tag">#夏アクセ着回し</a>
+             <a class="tag">#クリア</a>
+             <a class="tag">#ビーズ</a>
+             <a class="tag">#シェル</a>
+             <a class="tag">#夏祭り</a>
+             <a class="tag">#UVケア</a>
+             <a class="tag">#マスク</a>
+             <a class="tag">#淡白パール</a>
+             <a class="tag">#コーヒーゴールド</a>
+             <a class="tag">#BLOSSOM</a>
+             <a class="tag">#樹脂ピアス</a>
+             <a class="tag">#セラミックポストピアス</a>
+             <a class="tag">#ヘアアクセサリー</a>
+             <a class="tag">#痛くないイヤリング</a>
+             <a class="tag">#ピタッと</a>
+             <a class="tag">#ガチピン</a>
+             <a class="tag">#映画「恋は光」</a>
+          </div>
+        </div>
+        <div class="c-collection">
+          <p class="collection">COLLECTION</p>
+          <div class="collection-imgs">
+            <div class="collection-img">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2019/10/3-puretre-metal-1.jpg">
+              <p class="collection-img-p-1">メタルで洗練された印象に</p>
+            </div>
+            <div class="collection-img">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2020/12/3-stainlesshawaiian.jpg">
+              <p class="collection-img-p-1">316Lステレンス使用</p>
+            </div>
+            <div class="collection-img">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2019/11/3-lucenzio-2.jpg">
+              <p class="collection-img-p-1">しなやかシルエットのメタル</p>
+            </div>
+            <div class="collection-img">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2019/12/3-painlesse-1.jpg">
+              <p class="collection-img-p-2">痛くないイヤリング</p>
+            </div>
+            <div class="collection-img">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2020/12/3-resinpierce.jpg">
+              <p class="collection-img-p-2">抗菌特殊加工の樹脂ピアス</p>
+            </div>
+            <div class="collection-img">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2019/12/2-pitatto.jpg">
+              <p class="collection-img-p-2">シリコン製すべり止め付き</p>
+            </div>
+          </div>
+        </div>  
+        <div class="p-viewmore">
+          <a class="viewmore">VIEW MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＞</a>
+        </div>
+        <div class="c-ranking">
+          <p class="ranking-title">RANKING</p>
+          <ul class="ranking">
+            <li class="ranking-item">
+              <img src="https://accessory.fs-storage.jp/fs2cabinet/mas/mask170-7990/mask170-7990-m-01-dl.jpg">
+              <p>【めざましテレビ・POPUP紹介ITM!】メイクがつきにくい3D立体冷感不織布マスク</p>
+              <p class="ranking-item-price">605円</p>
+            </li>
+            <li class="ranking-item">
+              <img src="https://accessory.fs-storage.jp/fs2cabinet/mas/mask170-7991/mask170-7991-m-01-dl.jpg">
+              <p>【めざましテレビ・POPUP紹介ITM!】冷感7DAYSフィットマスク</p>
+              <p class="ranking-item-price">605円</p>
+            </li>
+            <li class="ranking-item">
+              <img src="https://accessory.fs-storage.jp/fs2cabinet/acr/acri-7-821-84669/acri-7-821-84669-m-01-dl.jpg">
+              <p>ピンクゴールドデザインスムースピアス</p>
+              <p class="ranking-item-price">2,420円</p>
+            </li>
+            <li class="ranking-item">
+              <img src="https://accessory.fs-storage.jp/fs2cabinet/BL8/BL802710-65/BL802710-65-m-01-dl.jpg">
+              <p>BLOSSOMデュオリップグロス</p>
+              <p class="ranking-item-price">1,5040円</p>
+            </li>
+            <li class="ranking-item">
+              <img src="https://accessory.fs-storage.jp/fs2cabinet/mut/mutp043/mutp043-m-01-dl.jpg">
+              <p>ビーンズ&ニュアンスフープセット樹脂ピアス【MUK】</p>
+              <p class="ranking-item-price">1,650円</p>
+            </li>
+            <li class="clear"></li>
+          </ul>
+        </div>
+        <div class="c-contents">
+          <p class="contents-title">CONTENTS</p>
+          <div class="contents-item-set">
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/06/1-contents2206.jpg">
+              <p>【特集】今すぐ欲しい夏満喫モチーフ！行き先別着回しコーデ提案<br><br>
+              <span class="date">2022.6.22&nbsp;</span><span class="new">NEW</span></p>
+            </div>
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/05/TOP-1.jpg">
+              <p>【特集】梅雨に負けない！簡単まとめ髪ヘアアレンジ<br><br>
+              <span class="date">2022.5.24</p>
+            </div>
+          </div>
+          <div class="contents-item-set">
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/04/1-mask.jpg">
+              <p>【特集】マスクコーデをアプデしよう♪パーソナルカラー診断<br><br>
+              <span class="date">2022.4.13</span></p>
+            </div>
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2020/11/1-newlife.jpg">
+              <p>【特集】新生活準備スタート♡気分がアガる春のアクセサリーコーデ<br><br>
+              <span class="date">2022.3.25</p>
+            </div>
+          </div>
+          <div class="contents-item-set">
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/02/1-contents2202-2.jpg">
+              <p>【特集】卒入学・お呼ばれスタイルの必需品”ハレの日”パールカタログ<br><br>
+              <span class="date">2022.2.25</span></p>
+            </div>
+            <div class="contents-item contens-item-last">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2020/11/1-202201.jpg">
+              <p>【特集】運を引き寄せてハッピーに！ワタシの味方”開運アクセ”<br><br>
+              <span class="date">2021.1.25</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-viewmore">
+          <a class="viewmore">VIEW MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＞</a>
+        </div>
+        <div class="c-media">
+          <p class="title">MEDIA</p>
+        </div>
+        <div class="sec_inner_3">
+          <div class="slider-3">
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2022/06/koihahikari.jpg">
+              <p>【衣装協力】映画「恋は光」</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2019/12/TV.jpg">
+              <p>【着用】ABCテレビ「なるみ岡村の過ぎるTV」「探偵ナイトスクープ」</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2022/03/2223804_o.jpg">
+              <p>「VERY 4月号」どうぶつペーパーソープ</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2019/12/TV.jpg">
+              <p>【着用】ABCテレビ「キャスト」</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2022/03/220228.jpg">
+              <p>【着用】テレビ朝日「グッド！モーニング」・CS放送「がんばれ歌うまキッズ！全力COVERS」</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2021/05/mart2107.jpg">
+              <p>「MART 7月号」マスクチェーン</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2021/02/cover_012_202104_ll.jpg">
+              <p>「リンネル 4月号」スズランネックレス＆ピアス</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2021/01/210118.jpg">
+              <p>「BAILA 2月号」フェスティノ フェイシャル モイストナノスチーマー</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2020/11/sweet202012-1.jpg">
+              <p>「sweet 12月号」フェスティノ 充電式 ヘッドウォッシュスパ</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2020/11/25ans12_width308.jpg">
+              <p>「23ans（ヴァンサンカン）ONLINE」美肌うるおい×ブライダルマスク</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2020/09/200904tmb.jpg">
+              <p>フジテレビ「めざましテレビ」花のカタチのペーパーソープ</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2020/07/200619.jpg">
+              <p>フジテレビ「めざましテレビ」・CBCテレビ「花咲かタイムズ」ひんやりグッズ</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2020/06/200615.jpg">
+              <p>フジテレビ「ネプリーグ」着用</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2020/04/4_Ray_hyoushi.jpg">
+              <p>「Ray 6月号」<br>MUK<br>MOCABROWN新作</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2019/12/81739a9308fbbc5b9e27705b13aa2b4b.jpg">
+              <p>「Gina2019-20Winter」ダンシングストーン</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2019/12/TV.jpg">
+              <p>日本テレビ「ヒルナンデス」着用</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2019/06/70d3867e936487645dd66089009293d1-1-e1576743316822.jpg">
+              <p>ABCテレビ「キャスト」着用</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2019/06/news-1-e1576743124246.jpg">
+              <p>NHK「ぐるっと関西おひるまえ」着用</p>
+            </div>
+            <div class="media-item">
+              <img class="slider-img-3" src="https://www.muk-webshop.com/wp-content/uploads/2019/01/news190109-0323-e1576743200573.jpg">
+              <p>日本テレビ「ヒルナンデス」着用</p>
+            </div>
+          </div>
+        </div>
+        <div class="c-news">
+          <p class="title">NEWS</p>
+        </div>
+        <div class="contents-item-set">
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/07/news220701.jpg">
+              <p>【Instagram】プレゼントキャンペーン開催中（2022/7/31まで）<br><br>
+              <span class="date">キャンペーン<br>2022.6.22&nbsp;</span><span class="new">NEW</span></p>
+            </div>
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/06/news220601-1.jpg">
+              <p>【Instagram】プレゼントキャンペーン開催中（2022/6/30まで）<br><br>
+              <span class="date">キャンペーン<br>2022.5.24</p>
+            </div>
+          </div>
+          <div class="contents-item-set">
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/05/news220517-tmb.jpg">
+              <p>【MUK別注】陶器アクセサリーMIKELO<br><br>
+              <span class="date">ニュース<br>2022.5.17</span></p>
+            </div>
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/05/news-2205.jpg">
+              <p>【Campaign】ピアス・イヤリング・イヤーカフ２点で10%off!※終了しました<br><br>
+              <span class="date">キャンペーン<br>2022.5.9</p>
+            </div>
+          </div>
+          <div class="contents-item-set">
+            <div class="contents-item">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/04/7a234a03b7bd74d037b39ea19e560425.png">
+              <p>【Dreamy stone】NEW｜プチペンダント&ピアス<br><br>
+              <span class="date">ニュース<br>2022.4.18</span></p>
+            </div>
+            <div class="contents-item contens-item-last">
+              <img src="https://www.muk-webshop.com/wp-content/uploads/2022/02/0207-4.jpg">
+              <p>【Puretre】NEW｜ペンダント&ピアス&ブレスレット&リング<br><br>
+              <span class="date">ニュース<br>2022.2.7</p>
+            </div>
+          </div>
+          <div class="p-viewmore">
+            <a class="viewmore">VIEW MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＞</a>
+          </div>
+          <div class="c-storebrand">
+            <p class="title">STORE BRAND</p>
+            <div class="sotrebrand">
+              <div class="storebrand-item"><img src="https://www.muk-webshop.com/wp-content/uploads/2018/09/puretre.jpg"></div>
+              <div class="storebrand-item"><img src="https://www.muk-webshop.com/wp-content/uploads/2018/07/MUKMOCABROWN.jpg"></div>
+              <div class="storebrand-item"><img src="https://www.muk-webshop.com/wp-content/uploads/2018/07/prepoint-1.jpg"></div>
+              <div class="storebrand-item"><img src="https://www.muk-webshop.com/wp-content/uploads/2019/12/JUNO4.jpg"></div>
+            </div>
+          </div>
+      </main>
     </div>
-    <div class="con2">
-      <h3>学べるレッスン</h3>
-      <div class="lesson">
-        <img src="https://prog-8.com/shared/images/lesson/html/study/html.svg">
-        <p>HTML&CSS</p>
-      </div>
-      <div class="lesson">
-        <img src="https://prog-8.com/shared/images/lesson/html/study/php.svg">
-        <p>PHP</p>
-      </div>
-      <div class="lesson">
-        <img src="https://prog-8.com/shared/images/lesson/html/study/ruby.svg">
-        <p>Ruby</p>
-      </div>
-      <div class="lesson">
-        <img src="https://prog-8.com/shared/images/lesson/html/study/swift.svg">
-        <p>Swift</p>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="con3">
-      <h3>お問い合わせ</h3>
-      <p class="mailaddress">メールアドレス（必須）</p>
-      <input>
-      <p>お問い合わせ内容（必須）</p>
-      <textarea></textarea>
-      <p>※必須項目は必ずご入力ください</p>
-      <input type="submit" value="送信">
+    <div class="bottom">
+      <div class="c-bottom">
+        <div class="bottom-logo"><img src="https://www.muk-webshop.com/wp-content/themes/muk/src/images/common/logo.png"></div>
+        <div class="bottom-sns">
+          <i class="fa-brands fa-instagram "></i>
+          <i class="fa-brands fa-twitter "></i>
+          <i class="fa-brands fa-line "></i>
+        </div>
+      </div>    
     </div>
     <footer>
-      <div class="footer-logo">Progate</div>
-      <div class="footer-menu">
-        <p>会社概要</p>
-        <p>採用</p>
-        <p>お問い合わせ</p>
+      <div class="footer-left">
+        <p class="footer-left-item">会社概要</p>
+        <p class="footer-left-item">MUK ONLINE SHOPについて</p>
+        <p class="footer-left-item">ガイド</p>
+        <p class="footer-left-item">新規会員登録（無料）</p>
+        <p class="contact">お問い合わせ</p>
+        <p class="buttom">ショップリストはこちら</p>
+        <p class="buttom">メールマガジン</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-right-category">
+          <p class="footer-right-title">CATEGORY</p>
+          <a class="footer-right-item">ピアス</a>
+          <a class="footer-right-item">イヤリング</a>
+          <a class="footer-right-item">ネックレス</a>
+          <a class="footer-right-item">リング</a>
+          <a class="footer-right-item">ブレスレット・アンクレット</a>
+          <a class="footer-right-item">ヘアアクセサリー</a>
+          <a class="footer-right-item">時計</a>
+          <a class="footer-right-item">雑貨</a>
+          <a class="footer-right-item">ジュエリー</a>
+        </div>
+        <div class="footer-right-type">
+          <p class="footer-right-title">TYPE</p>
+          <a class="footer-right-item">新作入荷アイテム</a>
+          <a class="footer-right-item">再入荷アイテム</a>
+          <a class="footer-right-item">マスク関連グッズ</a>
+          <a class="footer-right-item">金属アレルギー対応</a>
+          <a class="footer-right-item">プチプラアイテム</a>
+          <a class="footer-right-item">素材から探す</a>
+          <a class="footer-right-item">モチーフから探す</a>
+          <a class="footer-right-item">使用シーンから探す</a>
+          <a class="footer-right-item">ショップブランドから探す</a>
+          <a class="footer-right-item">商品コレクションから探す</a>
+        </div>
       </div>
     </footer>
+    <div class="arr">MUK online shop. All Rights Reserved.</div>
+  </body>
+
+  <script>
+    var nav_pos = $("#global_nav").offset().top;
+    var nav_height = $("#global_nav").outerHeight();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > nav_pos) {
+          $("body").css("padding-top", nav_height);
+          $("#global_nav").addClass("fixed");
+      } else {
+          $("body").css("padding-top", 0);
+          $("#global_nav").removeClass("fixed");
+      }
+  });
+    </script>
+  
+  <script>
+    $('.slider-1').slick({
+    autoplay: true,         //自動再生
+    autoplaySpeed: 2000,  //自動再生のスピード
+    speed: 800,  //スライドするスピード
+    dots: true, //スライドしたのドット
+    arrows: true,          //左右の矢印
+    infinite: true, //スライドのループ
+    pauseOnHover: false,   //ホバーしたときにスライドを一時停止しない　
+});
+  </script>
+
+  <script>
+    $('.slider-2').slick({
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    dots:true,
+    arrows:true
+  });
+  </script>
+
+<script>
+  $('.slider-3').slick({
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  dots:true,
+  arrows:true
+});
+</script>
+
+
+
   </body>
 </html>
